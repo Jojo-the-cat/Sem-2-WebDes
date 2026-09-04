@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jojo's Website</title>
+</head>
+<style>
+        body {
+            /* Create the rainbow gradient stretching from left to right */
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400% 400%;
+            
+            /* Animate the gradient smoothly over 15 seconds */
+            animation: rainbowAnimation 15s ease infinite;
+            
+            /* Make sure the background covers the whole page height */
+            height: 100vh; 
+            margin: 0;
+        }
+
+        /* The animation rules that move the background position */
+        @keyframes rainbowAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+<h1 align=center>Welcome to My First Website</h1>
+<h1> My First Heading </h1>
+</body>
+</html>
