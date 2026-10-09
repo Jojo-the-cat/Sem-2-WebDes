@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Tutorial 11 Internal CSS</title>
+<link rel=icon href=Audio.jpg type=image/jpg>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  /* 1. Text-decoration: A wavy underline, which is also a text-decoration value and works inline. */
+  .wavy {
+    text-decoration: underline wavy hotpink;
+  }
+
+  /* 2. :Letter-spacing: stretches the text out so it spreads like a marquee. */
+  .spaced {
+    letter-spacing: 4px;
+  }
+
+  /* 3. Text transform: transforms all text to uppercase */
+  .shout {
+    text-transform: uppercase;
+  }
+
+  /* 4. Display: list-item: turns the paragraph into a list item, and list-style-type accepts a plain string. */
+  .check {
+    display: list-item;
+    list-style-type: '✔ ';
+  }
+
+  /* 5. transform: rotate(): tilts to a certain value (3 degree in this case) so it stays readable. */
+  .tilt {
+    transform: rotate(3deg);
+  }
+
+  /* 6. direction: rtl plus unicode-bidi: bidi-override: meant for Arabic and Hebrew, but override mode reverses every character, so the paragraph reads backwards. */
+  .backwards {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+
+  /* 7. webkit-text-stroke: Adds an outline or stroke around every characters */
+  .outlined {
+    -webkit-text-stroke: 1px crimson;
+  }
+
+  /* 8. outline plus outline-offset: Draws a dotted orange box floating around the paragraph. */
+  .dotted-box {
+    outline: 3px dotted orange;
+    outline-offset: 8px;
+  }
+
+  /* 9. color: AccentColor: uses your browser or OS accent color. Needs a fairly recent browser. */
+  .accent {
+    color: AccentColor;
+  }
+
+  /* 10. cursor: help: Hover over this paragraph and the pointer becomes a question mark. */
+  .help {
+    cursor: help;
+  }
+</style>
+</head>
+
+<body topmargin=50 leftmargin=300>
+<h1>Personal Statement</h1>
+
+<p class="wavy">
+ Hello my audience, my name is Joshua Choong Junn. I am 24 years old this year, born on the eighth of July, 2002. Since birth I was physically weak. Well, not too weak, but I suffered from pneumonia for 7 years, hospitalized on and off day after day, causing an inconsistency in my studies. Yet, I still somehow persevered to have graduated in kindergarten. Although my memories then are hazy, my mother was willing to give up everything she had for my survival, as if it was her greatest test of faith, and when I was around 8 years old, this strickening pneumonia finally subsided and left, gracing me into a normal life, or so I thought…
+</p>
+   
+<p class="spaced">
+   In the next chapter of my life: I entered my first school, a government school at the age of 7 and studied there until a late primary level. English was my forte, but I was overall academically weak, always ranked among the lower quartile of the class yet subtly bound for potential. In one of the following years, my mother, now divorced and having me under her custody, became financially poorer. On one particular day, my mother and I decided to borrow money from my father by lying, which we successfully did, but it would eventually be one of the biggest mistakes of my life. It started with lying about my education, and how well I did, putting myself ahead of the class to support the intention of the lie. At around the age of 10, when my grandfather passed away, my mother, to my knowledge, went into depression or at least a downed state, and in her weariness took me out of school, or from studying to be specific. Between the ages of 11-12, I did not go to school and barely studied. I mostly spent time at home, lazying about, and doing whatever entertainment my mother could supply to keep her reality at bay. She did often try to buy books from book shops to at least make sure my academic knowledge would still be “updated” or among my age’s standards. I’d mostly either find my way around trying to evade it or cheat, but either way, having no school community environment, which gave me more time to think alone, was slowly becoming a breeding ground for intelligent wariness.
+</p>
+ 
+<p class="shout">
+   In 2015 when I was 13 years old, I finally got into a school – Hundred Lamb, but in no more than a month, I transferred to Alpha & Omega, and yet again, in no more than 3 months, I transferred to CA Christian Resource Training Centre (we’ll call it CA), a place where my entelechy was witnessed and found. In this school, CA for short, I improved the most socially and academically, and my growth was steady as well. However, what was taking the vice-versa route was my household’s financial situation. At that point, I should have been behind by a few years in terms of academic knowledge compared to the common standard of my age. Throughout 2015 to the end of 2016, I caught up on my studies with my goals averaging in 50 pages per day, and there I also found a community. I dramatically improve socially. I started to expand my comfort zone because of good friends and great teachers. They’ve all factored to my development. It was going smoothly until my financial situation caught up to me, and I started to be unable to pay my school fees. At the beginning of 2017, I transferred to a private school and studied IGCSE there for a year, and after a bit of discussion with my mother to get me to return to CA, I finally successfully returned at the beginning of 2018. While I was absent often, nearly a third of a year and worthy enough to get the most absent student award, I still consistently averaged my usual 50 pages per day. But, as I studied and progressed and improved, my financial situation was slowly compounding, piling up to at least an eventual and mighty RM10,000 of a debt to the school. It was out of the school’s mercy to still provide me with education, but eventually even the school had to stop supplying me PACEs because my side (finances) was failing its part. What was going on behind the scenes of failing to pay my school fees was hazy and sadly private to my family. Eventually and inevitably, I dropped out of CA near the end of 2019 due to financial issues, owing the school more than RM10,000.
+</p>
+
+<p class="check">
+   In 2020 when the Covid-19 pandemic was surging, I lazed at home and learned nothing except being entertained by my devices while still oblivious to what was going on financially. This went on until when the pandemic dwindled down, and some time between the end of 2020 and beginning of 2021, I started going to a place called Berkat Home near daily to study IGCSE. It was a home for children whose parents neglected or barely had time to take care of them. You could even term it as an orphanage, and it wouldn’t be an exaggeration. Now, the place hired professional teachers to teach these needy students who had no source of education. I was in a reluctant sense, one of them. Why did I go there to study daily? It helped my financial situation immensely because it cost little. Throughout the whole year, I studied there and made some friends. At the same time, my mother hired a friend to teach me IGCSE to double it as a progress of intending to take its exams, but sadly, all of these failed as well. I learned, but what I learned was not worthy of 1 year worth of knowledge learned in school. Then came 2022, when God ushered my life into a fundamental chapter of development and breakthroughs for the next few years.
+</p>
+
+<br>
+<br>
+
+<p class="tilt">
+   At this point in time, life had gotten quite interesting. A friend of mine, Alex Heng, who was the director of ZERA Academy, previously CA Christian Resource Training Centre, offered me a job to work there as a monitor. At first I rejected, but a few months later, I accepted. I worked there, getting to know everyone again, but this time with a better social posture, and I became friends with pretty much everyone. Not bad aren’t I? From a stay-at-home introvert to nearly a social butterfly. But, some of my friends, especially those from my church (Oasis JB) deserve the credit. Without them to get me to expand my comfort zone and learn to love others more, I would still be who I was back then. Now, I worked there for a few months, and in those months, I also learned to be socially closer to my Church cellgroup friends, which also includes Alex Heng (the leader) that I meet up with every Sunday for a church service. This group of friends will play a subtle but large role later on. 2022 went by smoothly, but of course, financially-speaking, I was still somewhat in rough waters where an old problem had caught up with me. My previous debt of more than RM10,000 to CA had to be paid, so a portion of my pay had to be deducted to pay off this debt, and on top of that, my mother and I had to lie to my father about our needs just to survive. For context and reference, at this point since the first lie, I had already lied to my father for many years, lying about graduating secondary school, entering Singapore Bible College and am nearing grade 8 in Music Theory, Violin, Piano. The tougher part was making sure that I remember and update every detail whenever my father comes down from Kuala Lumpur to see me. We will be getting to this other facet of my story soon, but for now, 2023 has finally dawned. It was the year I started to think and stop living in obliviousness.
+</p>
+
+<br>
+
+<p class="backwards">
+   Around the beginning of 2023, I decided to study again. I requested from Ms. Helena Lee(the principal of ZERA Academy) and Alex Heng to study or I should say, do PACEs at home while I work at school. So, to give my life one more chance, I studied and worked, but occasionally, I’d still have to lie to my father just so my mother and I can survive. However, I had started to get sick of lying because I had become weary of lying. It became a headache to remember and update lies, especially whenever I see my father. Sometimes, I wished I could just say the truth, but I feared that my father would have an outburst and dislike me; I feared that my relatives, my father’s side, would hate or disown me too; I feared that I was running on a time bomb unless I had a way to keep it from exploding. 2023 went by fast, but tensions were beginning to rise because I didn’t want to lie to my father, and my nights have started becoming nearly sleepless and overthinking all the possibilities of ways to deal with or escape from the problem. On the other hand though, my studies were more than halfway done, and progressing well, aside from occasional episodes of laziness. Since the first time I studied in CA to then, I had never for a single time failed a PACE Test. My grades were always top-notch, and every teacher praised my intelligence and my academic skills. Even the supervisor, whom I was under as a student the longest, really wanted the best for me, wanting the best for me, but aching to the fact of how much better I could’ve become. However, until now, no one knows the other facet of my life that is keeping me from growing.
+</p>
+
+<p class="outlined">
+   Now, I have to address one of the biggest predicaments of my life. I had started lying since I was in primary school, but that was only a seed that grew a terrible habit. When I was around 12 years old, it was when I started to truly lie with my mother about my life. To borrow money from my father, I lied about my primary education; I lied about my secondary education; I lied about how I transferred to merely a school or two when instead I transferred schools seven times; I lied about how well I did in class when in reality there was no class for me to study in to begin with; I lied about my learning Music Theory, Violin, and Piano from grade 1 to grade 8 and even going as far as to forge a certificate with my name on it, just to buy influence when in reality, I only stopped at grade 3; I lied that I graduated from CA and entered into Singapore Bible College to study a master degree in Theology; I lied about my courses and how I was doing in college; I lied about how my mother’s health was not doing well, how she had to go for surgery; how I needed this or that when in reality I did not; and I lied to him that I was doing better in life than how I actually was. Each new instance of lies was to borrow more and more money. From $1,000 to $2,000 to 5,000 to $10,000, and even to an outlandish $20,000 (this happened twice with the second time in 2024). What was worse was that whenever I saw him, he’d ask me about all of these things, and I had to update him like I was genuinely living a second life. For example, he would ask me how I was doing in piano, and I would tell him that I learned a new song and the contents of that new song, be it the time signature, key signature, or the notes or parts of the music sheet. I had been sustaining this fake life for 9 years, to remember and jog my memory for the details. You would ask why don’t I just tell the truth? If the truth was so easy to tell, then I would have done it when it first came to my mind. I feared for what terrible consequences it could bring to me and how much strain it could bring to the relationship of me, my father, and his relatives. I still loved them, and I didn’t want to be disliked or disowned by them, nor did I want my mother exposed like that, nor my father or his reputation hurt because his son had been lying to him for so long. Therefore, I thought I could live out this fake life as if my future was already predestined from the first lie, but as I tried as the months went on, it became harder and harder. Now, I don’t mean to antagonize my parents, my mother may have had her faults, but without her, I would not have certain things, such as my cat, Jojo, which my father surely won’t allow me to adopt, or the comfort she could best give me while I live in Johor Bahru where I can still see my friends everyday. There were many things going on behind me, but most of these problems were private to family affairs and sadly could not be disclosed.
+</p>
+
+<p class="dotted-box">
+   Entering the year of 2024, in a time between January and February, I was asked by my mother to help and lie to my father to get him to lend $20,000, but that was when I told my mother that I was done lying already. I didn’t want to do such a thing anymore, and when she asked him for the money, he also rejected, but seeing how much it could help my mother because she seemed to need it desperately, I offered a counter-proposal in which I would take her place to lower the amount borrowed to $18,800 and to return him $1,200 everyday, but I will not lie for money anymore. As his son, he would trust me more than my mother, and he would still believe that his son is playing a more innocent role. The consequences of having a pay is you usually need to start paying your end to contribute. So, on top of the $1,200, I also paid a partial rent of where I stayed with my father, the internet bill, and tithes & offering if you want to include that, and transport and food sometimes. At that point, I barely had enough for myself. This went on for 3 months. Only in the evening of a day in April, he called me and told me to stop. He said that I was doing too much for my age and for what I gain. “You will suffer the longer you keep this up.” He gave me a better proposal: I will temporarily stop paying him, but I must also move out of where I was staying because it was not cost-effective for me. I wanted to tell him the truth, but I still feared, so I withheld the truth. Although I withheld the truth from him, that year was also when I first shared this problem to my cellgroup friends. It started with my leader, then to a few good friends, then the cellgroup. The problem was so difficult and inextricable for them that none of them could think of a single solution. However, there was one idea that all of them shared — to tell him the truth. Over the next few months, some of them encouraged — even urged — me to tell the truth, to muster up the courage to finally say everything. It would be hard, but the truth would set me free. Education was still going strong, though slow, but my future was hindered by this lie, and I’ve nearly reached my limit in sustaining it. 
+</p>
+
+<p class="accent">
+   The dawn of the final year, 2025, was when everything shifted for a new course. It was all smooth at first until rJanuary 29th. It was Chinese New Year, and I was on the road back to my home in my father’s car after finishing a family reunion dinner. While on the way, I felt that I could not contain it any longer and that now was the perfect time to say it because today the truth will set me free..After a reunion dinner, my father was fetching me back home, and while we were on the way Therefore, I admitted the truth. I started with how I lied about my music, from the certification and to the grades, then I admitted about my education, then my life, and so on. Each thing I said made me more remorseful than the last, and as I kept saying it, I started getting more and more overwhelmed into wanting to cry. It started with the regret of unshed tears, but it slowly worsened into streams of sorrow. While I tried my best to keep myself from crying, I had never felt so terrible in my life. When we reached our destination, and when I finished admitting everything, he only paused for a moment before he said something unexpected. He said, “Why didn’t you tell me earlier?” “If you had told me sooner, I would’ve pulled you out of this mess.” “You are a Christian; you should know better not to lie.” All these words that came from him, someone who is not a Christian. I expected rage, disappointment, displeasure, yet what actually came out was mercy, understanding, and love. This fatherly love was not what I was ready for, and all these gave me all the more reason to cry. After being consoled and having cooled down a little bit, we got out of the car and we hugged. I told him that I was sorry for being the biggest disappointment in the family, but he said, “It is not your fault. You are just a victim. I love you.” 
+“I love you too, dad.” 
+</p>
+
+<p class="help">
+   I cried the worst I had ever cried in my whole life, but the weight — the burden on my shoulders — was all gone now. The weight of 10 years of lies was finally lifted, and I had never felt so light in my life. The truth had set me free. I mistook truth for pain when it was actually freedom, and now I finally felt blessed. After that day, my relationship with my father was more honest and better than distant.. As the months went on, I slowly finished my studies and finally graduated, and I finally lived my life no longer hindered by lies. 
+</p>
+   
+<p>
+   I am grateful for my friends that encouraged me to tell the truth; I am grateful for my father for still having that fatherly love and mercy on me because it showed me how wrong I was in knowing him; and I’m grateful for God for giving me the people to help me even in the midst of sorrow. In the span of my whole life, I had moved houses six times, due for the seventh time soon, transferred schools seven times, and changed churches seven times while lying for 10 years since I was 12 years old. I lived a fluctuating life while having to sustain a steady lie. However, through it all, I still persevered, not with my own strength, but with the help and love of others. Although I finished my studies late, I am more than glad to be no longer bound to the weight of a predestined future narrated by lies. I learned that in whatever circumstance the truth will set you free because the merciful love I received when I was at my lowest was the pride of the Father.
+</p>
+
+</body>
+</html>
+

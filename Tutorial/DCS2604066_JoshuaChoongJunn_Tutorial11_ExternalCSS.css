@@ -1,0 +1,52 @@
+  /* 1. Text-decoration: A wavy underline, which is also a text-decoration value and works inline. */
+  .wavy {
+    text-decoration: underline wavy hotpink;
+  }
+
+  /* 2. :Letter-spacing: stretches the text out so it spreads like a marquee. */
+  .spaced {
+    letter-spacing: 4px;
+  }
+
+  /* 3. Text transform: transforms all text to uppercase */
+  .shout {
+    text-transform: uppercase;
+  }
+
+  /* 4. Display: list-item: turns the paragraph into a list item, and list-style-type accepts a plain string. */
+  .check {
+    display: list-item;
+    list-style-type: '✔ ';
+  }
+
+  /* 5. transform: rotate(): tilts to a certain value (3 degree in this case) so it stays readable. */
+  .tilt {
+    transform: rotate(3deg);
+  }
+
+  /* 6. direction: rtl plus unicode-bidi: bidi-override: meant for Arabic and Hebrew, but override mode reverses every character, so the paragraph reads backwards. */
+  .backwards {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+
+  /* 7. webkit-text-stroke: Adds an outline or stroke around every characters */
+  .outlined {
+    -webkit-text-stroke: 1px crimson;
+  }
+
+  /* 8. outline plus outline-offset: Draws a dotted orange box floating around the paragraph. */
+  .dotted-box {
+    outline: 3px dotted orange;
+    outline-offset: 8px;
+  }
+
+  /* 9. color: AccentColor: uses your browser or OS accent color. Needs a fairly recent browser. */
+  .accent {
+    color: AccentColor;
+  }
+
+  /* 10. cursor: help: Hover over this paragraph and the pointer becomes a question mark. */
+  .help {
+    cursor: help;
+  }
