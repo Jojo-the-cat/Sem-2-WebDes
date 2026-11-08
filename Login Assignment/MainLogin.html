@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login Page</title>
+   <link rel="icon" href="LogoIcon2.png" type="image/png">
+   <link rel="stylesheet" href="loginPage.css">
+   <script src="loginPage-general.js" defer></script>   <!-- (General Demonstration) -->
+<!--   <script src="loginPage-simulated.js" defer></script>   (Simulation Demonstration) -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet"> <!-- For implementing 
+                                                                                            "Outfit" font -->
+</head>
+<body>
+
+   <main>
+
+      <div class="loginCard">
+			
+         <p class="brandName">Ausculta Oasis</p>
+         <p class="brandTagline">The Sanctuary for Sound</p>
+	 <h1>Welcome Back.</h1>
+
+    	 <p>Sign in to your account</p>
+
+	 <form id="loginForm">
+
+         <label for="username">Username:</label>
+         <input type="text" id="username" name="username" maxlength="30" autocomplete="username">
+
+         <label for="password">Password:</label>
+	 <input type="password" id="password" name="password" maxlength="128" autocomplete="current-password">
+
+         <input type="submit" value="Enter the Sanctuary">
+	 <p id="message"></p>
+
+    	 </form>
+      </div>
+   </main>
+</body>
+</html>
