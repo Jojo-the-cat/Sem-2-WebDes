@@ -1,0 +1,121 @@
+body {
+   background-color: #F5F0E8;
+   margin: 0;
+   background-image: url("Bottle images/bottled-sounds-bg.png");
+   background-size: cover;   /* Scales image to cover entire bg, crops if necessary */
+   background-position: center;
+   background-repeat: no-repeat;   /* Prevents image from repeating like tiles */
+}
+
+.loginCard {
+   background-color: #FFF3E3;
+   width: 100%;   /* previously 450px as prototype */
+   padding: 30px;
+   border-radius: 15px;
+   max-width: 450px;   /* this is particularly useful for responsive login forms from limiting a browser from going                      		          beyond a certain width */
+   box-sizing: border-box;   /*with this, padding is included within the declared width */
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.33);   /* box's shadow */
+
+}
+
+.loginCard h1 {
+   font-size: 28px;
+   color: #302820;
+   text-align: center;
+   margin-bottom: 28px;
+}
+
+.loginCard h1 + p {
+   color: #786B5F;
+   font-size: 15px;
+   text-align: center;
+   font-family: sans-serif;
+}
+
+.loginCard label {   /*Text labels above boxes */
+   display: block;
+   font-size: 14px;
+   font-weight: bold;
+   color: #59483B;
+   margin-bottom: 8px;
+}
+
+main {
+   display: flex;   /* flexbox container */
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   padding: 20px;
+   box-sizing: border-box;   /*CSS uses content-box by default. Paadding is added outside those dimensions. 
+                             Main becomes 840px even though browser is 800px. border-box squeezes it inside. */
+}
+
+
+
+.brandName {   /* Brand name */
+   font-family: Georgia, serif;
+   font-size: 40px;
+   font-weight: bold;
+   color: #302820;
+   text-align: center;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.brandTagline {   /* Brand tagline */
+   font-family: Georgia, serif;
+   font-size: 16px;
+   font-weight: normal;
+   color: #A17B4E;
+   text-align: center;
+   font-style: italic;
+   margin-top: 0;
+   margin-bottom: 24px;
+   line-height: 1.5;
+}
+
+
+
+/* --- INPUTS / FORM --- */
+
+
+input[type="text"],
+input[type="password"] {   /* Boxes below texts */
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #D6C6B5;
+   border-radius: 8px;
+   background-color: #FFFCF7;
+   box-sizing: border-box;
+   margin-bottom: 18px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {   /* Creates a focus (outline) around the box upon clicking it */
+   border-color: #A17B4E;
+   outline: 2px solid #A17B4E;
+   outline-offset: 2px;
+}
+
+input[type="submit"] {
+   width: 100%;
+   padding: 12px;
+   background-color: #8B6847;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   font-size: 18px;
+   font-family: Georgia;
+   cursor: pointer;
+   transition: background-color 0.3s ease;   /* Animates changes between CSS states: creates a smooth animated
+                                             effect when an element's background color changes. */
+
+}
+
+input[type="submit"]:hover {
+   background-color: #765536;   
+}
+
+
+
+
