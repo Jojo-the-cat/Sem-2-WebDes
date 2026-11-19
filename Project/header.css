@@ -1,0 +1,187 @@
+/*--- Universal Header (TOO USEFUL and saved so much trouble) ---*/
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #FFF3E3;
+   padding: 22px 35px;
+   position: relative;
+   border-bottom: 3px double #A17B4E;
+   box-shadow: 0 4px 15px rgba(101, 69, 47, 0.2);
+   gap: 15px;
+}
+
+.branding {
+   display: flex;
+   flex-direction: column;
+   min-width: 0;
+}
+
+.branding h2 {
+   color: #A17B4E;
+   font-family: 'Cinzel', Georgia, serif;
+   font-size: 42px;
+   font-weight: 600;
+   letter-spacing: 2px;
+   margin: 0;
+}
+
+.branding h2::after {
+   content: "───── ◆ ─────";
+   font-size: 11px;
+   letter-spacing: 2px;
+   color: #A17B4E;
+   display: block;
+   margin: 3px 0;
+}
+
+.branding p {
+   font-family: 'Lora', Georgia, serif;
+   font-style: italic;
+   letter-spacing: 1.2px;
+   color: #795C42;
+   font-size: 14px;
+   margin: 4px 0 0;
+}
+
+
+/*--- Burger Nav ---*/
+
+#menuToggle {
+   background-color: #F3E3C7;
+   border: 1px solid #A17B4E;
+   border-radius: 10px;
+   font-size: 28px;
+   color: #795C42;
+   padding: 8px 14px;
+   cursor: pointer;
+   transition: 0.25s ease;
+   flex-shrink: 0;
+}
+
+#menuToggle:hover {
+   background-color: #A17B4E;
+   color: #FFF3E3;
+}
+
+#menuToggle:focus-visible {
+   outline: 2px solid #795C42;
+   outline-offset: 4px;
+}
+
+#mainNavigation {
+   display: none;
+   position: absolute;
+   top: calc(100% + 8px);
+   right: 20px;
+   z-index: 100;
+   background-color: #FFF3E3;
+   min-width: 220px;
+   max-width: calc(100% - 40px);
+   border: 1px solid #A17B4E;
+   border-radius: 12px;
+   box-shadow: 0 6px 20px rgba(101, 69, 47, 0.25);
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+#mainNavigation.open {
+   display: block;
+   animation: menuAppear 0.2s ease;
+}
+
+#mainNavigation a {
+   display: block;
+   padding: 14px 18px;
+   text-decoration: none;
+   font-family: 'Cinzel', Georgia, serif;
+   font-size: 15px;
+   color: #65452F;
+   border-radius: 6px;
+   transition: 0.2s ease;
+}
+
+#mainNavigation a:hover,
+#mainNavigation a:focus-visible {
+   background-color: #F3E3C7;
+   color: #795C42;
+}
+
+#mainNavigation a + a {
+   border-top: 1px solid #E2D9CE;
+}
+
+@keyframes menuAppear {
+   from {
+      opacity: 0;
+      transform: translateY(-8px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+
+/*--- Header Responsiveness ---*/
+
+@media (max-width: 900px) {
+
+   header {
+      padding: 20px;
+   }
+
+   .branding h2 {
+      font-size: 34px;
+   }
+
+}
+
+@media (max-width: 600px) {
+
+   header {
+      padding: 15px;
+      gap: 10px;
+   }
+
+   .branding h2 {
+      font-size: 23px;
+      letter-spacing: 0.5px;
+   }
+
+   .branding h2::after {
+      font-size: 9px;
+      letter-spacing: 1px;
+   }
+
+   .branding p {
+      font-size: 11px;
+      letter-spacing: 0.3px;
+   }
+
+   #menuToggle {
+      font-size: 24px;
+      padding: 6px 10px;
+   }
+
+   #mainNavigation {
+      right: 10px;
+      min-width: 180px;
+   }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+   #mainNavigation.open {
+      animation: none;
+   }
+
+   #menuToggle,
+   #mainNavigation a {
+      transition: none;
+   }
+
+}

@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Checkout | Ausculta Oasis</title>
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="checkout.css">
+   <link rel="stylesheet" href="header.css">
+   <script src="checkout.js" defer></script>
+</head>
+
+<body>
+
+   <header>
+
+      <div class="branding">
+         <h2>Ausculta oasis</h2>
+         <p>The Sanctuary for Sound</p>
+      </div>
+      
+      <button id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNavigation" aria-label="Toggle navigation">
+         ☰
+      </button>
+
+      <nav id="mainNavigation" aria-label="Main navigation">
+
+         <a href="mainLogin.html">
+            Login
+         </a>
+
+         <a href="index.html">
+            Home
+         </a>
+
+         <a href="mainShop.html">
+            Shop
+         </a>
+
+         <a href="cart.html">
+            Cart
+         </a>
+  
+         <a href="checkout.html" aria-current="page">
+            Checkout
+         </a>
+
+      </nav>
+
+   </header>
+
+
+   <main class="panel">
+
+      <h1>Complete Your Collection</h1>
+      
+      <p>One final step before these bottled sounds become yours.</p>
+      
+      <div id="checkoutContent" class="checkout-layout">
+      
+         <form id="checkoutForm">
+
+            <h2>Customer Details</h2>
+
+            <label for="customerName">
+               Full Name
+            </label>
+         
+            <input id="customerName" name="customerName" autocomplete="name" required maxlength="100">
+        
+            <label for="customerEmail">
+               Email Address
+            </label>
+
+            <input id="customerEmail" name="customerEmail" type="email" autocomplete="email" required maxlength="150">
+        
+            <label for="customerPhone">
+               Phone Number (optional)
+            </label>
+
+            <input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" maxlength="30">
+        
+
+            <h2>Payment Method</h2>
+        
+            <label for="paymentMethod">
+               Choose your preferred payment method
+            </label>
+        
+            <select id="paymentMethod" name="paymentMethod" required>
+         
+               <option value="">
+                  Select a method
+               </option>
+   
+               <option value="Online Banking">
+                  Online Banking
+               </option>
+
+               <option value="E-Wallet">
+                  E-Wallet
+               </option>
+
+               <option value="Card">
+                  Credit / Debit Card
+               </option>
+   
+            </select>
+        
+            <button class="primary" id="placeOrder" type="submit">
+               Place Order
+            </button>
+      
+         </form>
+
+
+         <section class="summary" aria-label="Order summary">
+
+            <h2>Order Summary</h2>
+
+            <div id="orderItems"></div>
+
+            <div class="total">
+               <strong>Total</strong>
+               <strong id="orderTotal">RM0.00</strong>
+            </div>
+
+            <a href="cart.html">
+               Edit Basket
+            </a>
+
+         </section>
+
+      </div>
+
+
+      <section id="confirmation" class="confirmation" hidden aria-live="polite"></section>
+
+   </main>
+  
+
+   <footer>
+      © 2026 Ausculta Oasis · The Sanctuary for Sound
+   </footer>
+
+
+</body>
+</html>

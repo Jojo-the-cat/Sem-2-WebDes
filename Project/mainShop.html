@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <meta charset="UTF-8">
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+   <link rel="icon" href="LogoIcon2.png" type="image/png">
+   <link rel="stylesheet" href="mainShop.css">
+   <link rel="stylesheet" href="header.css">
+   <script src="index.js" defer></script>
+   <script src="mainShop.js" defer></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>
+      Ausculta Oasis
+   </title>
+
+</head>
+
+<body>
+
+
+<header>
+
+   <div class="branding">
+
+      <h2>
+         Ausculta oasis
+      </h2>
+
+      <p>
+         The Sanctuary for Sound
+      </p>
+
+   </div>
+
+   <button type="button" id="menuToggle" aria-expanded="false" aria-controls="mainNavigation" aria-label="Open navigation menu">
+      ☰
+   </button>    <!-- ARIA = Accessible Rich Internet Applications -->
+
+   <nav id="mainNavigation">
+
+      <a href="mainLogin.html" id="navLogin">
+         Login
+      </a>
+
+      <a href="index.html" id="navHome">
+         Home
+      </a>
+
+      <a href="mainShop.html" id="navShop">
+         Shop
+      </a>
+
+      <a href="cart.html" id="navCart">
+         Cart
+      </a>
+
+      <a href="checkout.html" id="navCheckout">
+         Checkout
+      </a>
+
+   </nav>
+
+</header>
+
+
+<main>
+   <section id="shopIntro">
+
+      <div class="shopIntro">
+
+
+         <h1>
+            Explore the catalogue.
+         </h1>
+
+         <p>
+            In here, you will find what you desire to hear, be it a tranquil sound to soothe your soul, a scary sound to scare your friends, a funny sound to laugh out loud, or even something that makes your other senses tingle.
+         </p>
+
+      </div>
+
+   </section>
+
+
+   <section id="categorySelector">
+
+      <h2>
+         Choose Your Collection
+      </h2>
+
+      <div class="categoryButtons">
+
+         <button type="button"
+               class="categoryButton"
+               data-category="verdant">
+            Verdant Voices
+         </button>
+
+         <button type="button"
+               class="categoryButton"
+               data-category="tempest">
+            Tempest Treasures
+         </button>
+
+         <button type="button"
+               class="categoryButton"
+               data-category="hearthside">
+            Hearthside Harmonies
+         </button>
+
+         <button type="button"
+               class="categoryButton"
+               data-category="melodic">
+            Melodic Marvels
+         </button>
+
+         <button type="button"
+               class="categoryButton"
+               data-category="wandering">
+            Wandering Whispers
+         </button>
+
+         <button type="button"
+               class="categoryButton"
+               data-category="arcane">
+            Arcane Acoustics
+         </button>
+
+         <button type="button"
+               class="categoryButton"
+               data-category="forbidden">
+            Forbidden Flaws
+         </button>
+
+         <button type="button"
+               class="categoryButton"
+               data-category="peculiar">
+            Peculiar Portions
+         </button>
+
+      </div>
+   </section>
+
+   <section id="catalogue">
+      <div class="catalogue">
+
+         <h2>
+            Bottled Sounds
+         </h2>
+
+      </div>
+
+
+      <div class="shopGrid">
+
+
+<!-- Verdant Voices Products -->
+
+
+<!-- DFC -->
+
+         <article class="shopCard" data-category="verdant">
+
+            <img src="Bottle images/DFC.png"
+               alt="Magical bottle of Dawn's First Chorus"
+               class="productImage">
+
+            <h3>
+               Dawn's First Chorus
+            </h3>
+
+            <p>
+               The first songs of woodland birds welcoming the rising Sunday sun.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/DFC.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM19.90
+            </p>
+
+            <button type="button" class="addToCart" id="vv01" data-id="vv01">
+               Add to Cart
+            </button>
+
+         </article>
+
+
+<!-- tRC -->
+
+         <article class="shopCard" data-category="verdant">
+
+            <img src="Bottle images/tRC.png"
+               alt="Magical bottle of the Rustling Canopy"
+               class="productImage">
+
+            <h3>
+               The Rustling Canopy
+            </h3>
+
+            <p>
+               A gentle breeze passing through the treetops of an ancient woodlands beyond yesteryears.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tRC.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM14.90
+            </p>
+
+            <button type="button" class="addToCart" id="vv02" data-id="vv02">
+               Add to Cart
+            </button>
+
+         </article>
+
+
+<!-- TS -->
+
+         <article class="shopCard" data-category="verdant">
+
+            <img src="Bottle images/TS.png"
+               alt="Magical bottle of Twilight Serenade"
+               class="productImage">
+
+            <h3>
+               Twilight Serenade
+            </h3>
+
+            <p>
+               The delicate chorus of insects as the forest settles into darkness.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/TS.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM14.90
+            </p>
+
+            <button type="button" class="addToCart" id="vv03" data-id="vv03">
+               Add to Cart
+            </button>
+
+         </article>
+
+
+<!-- The Marshland Choir -->
+
+         <article class="shopCard" data-category="verdant">
+
+            <img src="Bottle images/tMC.png"
+               alt="Magical bottle of the Marshland Choir"
+               class="productImage">
+
+            <h3>
+               The Marshland Choir
+            </h3>
+
+            <p>
+               An enthusiastic performance from the inhabitants of a moonlit marsh.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tMC.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM19.90
+            </p>
+
+            <button type="button" class="addToCart" id="vv04" data-id="vv04">
+               Add to Cart
+            </button>
+
+         </article>
+
+
+<!-- The Night Watcher -->
+
+         <article class="shopCard" data-category="verdant">
+
+            <img src="Bottle images/tNW.png"
+               alt="Magical bottle of the Night Watcher"
+               class="productImage">
+
+            <h3>
+               The Night Watcher
+            </h3>
+
+            <p>
+               The solitary call of an owl keeping vigil over the sleeping forest.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tNW.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM24.90
+            </p>
+
+            <button type="button" class="addToCart" id="vv05" data-id="vv05">
+               Add to Cart
+            </button>
+
+         </article>
+
+
+<!-- Tempest Products -->
+
+<!-- SiaB -->
+
+         <article class="shopCard" data-category="tempest">
+
+            <img src="Bottle images/SiaB.png"
+               alt="Magical bottle of Storm in a Bottle"
+               class="productImage">
+
+            <h3>
+               Storm in a Bottle
+            </h3>
+
+            <p>
+               A restless storm captured at its most magnificent, complete with rolling thunder and distant rainfall.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/SiaB.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM39.90
+            </p>
+
+            <button type="button" class="addToCart" id="tt01" data-id="tt01">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tRL -->
+
+         <article class="shopCard" data-category="tempest">
+
+            <img src="Bottle images/tRL.png"
+               alt="Magical bottle of The Rainkeeper's Lullaby"
+               class="productImage">
+
+            <h3>
+               The Rainkeeper's Lullaby
+            </h3>
+
+            <p>
+               Soft, uninterrupted rain, carefully preserved for peaceful evenings.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tRL.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM14.90
+            </p>
+
+            <button type="button" class="addToCart" id="tt02" data-id="tt02">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tRS -->
+
+         <article class="shopCard" data-category="tempest">
+
+            <img src="Bottle images/tRS.png"
+               alt="Magical bottle of The Restless Sea"
+               class="productImage">
+
+            <h3>
+               The Restless Sea
+            </h3>
+
+            <p>
+               Waves crashing against a distant shore, carrying the rhythm of the open sea.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tRS.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM19.90
+            </p>
+
+            <button type="button" class="addToCart" id="tt03" data-id="tt03">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- WotB -->
+
+         <article class="shopCard" data-category="tempest">
+
+            <img src="Bottle images/WotB.png"
+               alt="Magical bottle of Whispers of the Brook"
+               class="productImage">
+
+            <h3>
+               Whispers of the Brook
+            </h3>
+
+            <p>
+               The gentle murmur of water winding through a woodland stream.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/WotB.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM14.90
+            </p>
+
+            <button type="button" class="addToCart" id="tt04" data-id="tt04">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tHN -->
+
+         <article class="shopCard" data-category="tempest">
+
+            <img src="Bottle images/tHN.png"
+               alt="Magical bottle of The Howling North"
+               class="productImage">
+
+            <h3>
+               The Howling North
+            </h3>
+
+            <p>
+               A fierce northern gale, sealed before it could sweep away the apothecary's roof.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tHN.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM29.90
+            </p>
+
+            <button type="button" class="addToCart" id="tt05" data-id="tt05">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- aTFD -->
+
+         <article class="shopCard" data-category="tempest">
+
+            <img src="Bottle images/aTFD.png"
+               alt="Magical bottle of A Thousand Falling Drops"
+               class="productImage">
+
+            <h3>
+               A Thousand Falling Drops
+            </h3>
+
+            <p>
+               The lively percussion of rain striking an old rooftop.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/aTFD.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM19.90
+            </p>
+
+            <button type="button" class="addToCart" id="tt06" data-id="tt06">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tDD -->
+
+         <article class="shopCard" data-category="tempest">
+
+            <img src="Bottle images/tDD.png"
+               alt="Magical bottle of The Distant Deluge"
+               class="productImage">
+
+            <h3>
+               The Distant Deluge
+            </h3>
+
+            <p>
+               A storm heard from afar, gradually growing closer as the skies darken.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tDD.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM34.90
+            </p>
+
+            <button type="button" class="addToCart" id="tt07" data-id="tt07">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tFL -->
+
+         <article class="shopCard" data-category="tempest">
+
+            <img src="Bottle images/tFL.png"
+               alt="Magical bottle of The Frozen Lake"
+               class="productImage">
+
+            <h3>
+               The Frozen Lake
+            </h3>
+
+            <p>
+               The strange, resonant groans of ice shifting beneath a winter sky.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tFL.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM49.90
+            </p>
+
+            <button type="button" class="addToCart" id="tt08" data-id="tt08">
+               Add to Cart
+            </button>
+
+         </article>
+
+
+<!-- Hearthside Products -->
+
+<!-- tEH -->
+
+         <article class="shopCard" data-category="hearthside">
+
+            <img src="Bottle images/tEH.png"
+               alt="Magical bottle of The Eternal Hearth"
+               class="productImage">
+
+            <h3>
+               The Eternal Hearth
+            </h3>
+
+            <p>
+               A warm fire that never runs out of wood, preserved in a bottle for chilly nights.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tEH.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM19.90
+            </p>
+
+            <button type="button" class="addToCart" id="hh01" data-id="hh01">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- CC -->
+
+         <article class="shopCard" data-category="hearthside">
+
+            <img src="Bottle images/CC.png"
+               alt="Magical bottle of The Clockmaker's Companion"
+               class="productImage">
+
+            <h3>
+               The Clockmaker's Companion
+            </h3>
+
+            <p>
+               The steady ticking of an old clock, faithfully keeping time even when its hands have stopped.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/CC.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM14.90
+            </p>
+
+            <button type="button" class="addToCart" id="hh02" data-id="hh02">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- PoP -->
+
+         <article class="shopCard" data-category="hearthside">
+
+            <img src="Bottle images/PoP.png"
+               alt="Magical bottle of Pages of Peace"
+               class="productImage">
+
+            <h3>
+               Pages of Peace
+            </h3>
+
+            <p>
+               The gentle rustling of pages from a well-loved book.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/PoP.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM9.90
+            </p>
+
+            <button type="button" class="addToCart" id="hh03" data-id="hh03">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tBM -->
+
+         <article class="shopCard" data-category="hearthside">
+
+            <img src="Bottle images/tBM.png"
+               alt="Magical bottle of The Baker's Mornin'"
+               class="productImage">
+
+            <h3>
+               The Baker's Mornin'
+            </h3>
+
+            <p>
+               The comforting sounds of an early morning bakery preparing its first loaves.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tBM.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM19.90
+            </p>
+
+            <button type="button" class="addToCart" id="hh04" data-id="hh04">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- aKP -->
+
+         <article class="shopCard" data-category="hearthside">
+
+            <img src="Bottle images/aKP.png"
+               alt="Magical bottle of The Kettle's Promise"
+               class="productImage">
+
+            <h3>
+               The Kettle's Promise
+            </h3>
+
+            <p>
+               A familiar whistle announcing that something warm is waiting.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tKP.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM14.90
+            </p>
+
+            <button type="button" class="addToCart" id="hh05" data-id="hh05">
+               Add to Cart
+            </button>
+
+         </article>
+
+
+<!-- Melodic Products -->
+
+<!-- tCL -->
+
+         <article class="shopCard" data-category="melodic">
+
+            <img src="Bottle images/tCL.png"
+               alt="Magical bottle of The Clockmaker's Lullaby"
+               class="productImage">
+
+            <h3>
+               The Clockmaker's Lullaby
+            </h3>
+
+            <p>
+               A delicate melody preserved from a clockwork music box that has long since stopped turning.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tCL.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM29.90
+            </p>
+
+            <button type="button" class="addToCart" id="mm01" data-id="mm01">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- IR -->
+
+         <article class="shopCard" data-category="melodic">
+
+            <img src="Bottle images/IR.png"
+               alt="Magical bottle of Ivory Reverie"
+               class="productImage">
+
+            <h3>
+               Ivory Reverie
+            </h3>
+
+            <p>
+               A handful of peaceful piano notes, captured before their final echoes faded.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/IR.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM24.90
+            </p>
+
+            <button type="button" class="addToCart" id="mm02" data-id="mm02">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tHT -->
+
+         <article class="shopCard" data-category="melodic">
+
+            <img src="Bottle images/tHT.png"
+               alt="Magical bottle of The Harpist's Touch"
+               class="productImage">
+
+            <h3>
+               The Harpist's Touch
+            </h3>
+
+            <p>
+               The graceful plucking of enchanted strings, said to soothe even the most restless traveler.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tHT.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM29.90
+            </p>
+
+            <button type="button" class="addToCart" id="mm03" data-id="mm03">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- SR -->
+
+         <article class="shopCard" data-category="melodic">
+
+            <img src="Bottle images/SR.png"
+               alt="Magical bottle of Silver Resonance"
+               class="productImage">
+
+            <h3>
+               Silver Resonance
+            </h3>
+
+            <p>
+               Clear, shimmering tones that linger in the air long after the bottle is opened.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/SR.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM24.90
+            </p>
+
+            <button type="button" class="addToCart" id="mm04" data-id="mm04">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- SS -->
+
+         <article class="shopCard" data-category="melodic">
+
+            <img src="Bottle images/SS.png"
+               alt="Magical bottle of Sundown Strings"
+               class="productImage">
+
+            <h3>
+               Sundown Strings
+            </h3>
+
+            <p>
+               The warm sound of a wandering musician playing beneath the evening sky.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/SS.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM24.90
+            </p>
+
+            <button type="button" class="addToCart" id="mm05" data-id="mm05">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tMP -->
+
+         <article class="shopCard" data-category="melodic">
+
+            <img src="Bottle images/tMP.png"
+               alt="Magical bottle of The Musician's Prelude"
+               class="productImage">
+
+            <h3>
+               The Musician's Prelude
+            </h3>
+
+            <p>
+               The intimate sounds of a violinist preparing for a performance.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tMP.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM24.90
+            </p>
+
+            <button type="button" class="addToCart" id="mm06" data-id="mm06">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tFW -->
+
+         <article class="shopCard" data-category="melodic">
+
+            <img src="Bottle images/tFW.png"
+               alt="Magical bottle of The Forgotten Waltz"
+               class="productImage">
+
+            <h3>
+               The Forgotten Waltz
+            </h3>
+
+            <p>
+               Three gentle beats carrying the memory of a ballroom's final dance.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tFW.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM34.90
+            </p>
+
+            <button type="button" class="addToCart" id="mm07" data-id="mm07">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tBA -->
+
+         <article class="shopCard" data-category="melodic">
+
+            <img src="Bottle images/tBA.png"
+               alt="Magical bottle of The Brass Awakening"
+               class="productImage">
+
+            <h3>
+               The Brass Awakening
+            </h3>
+
+            <p>
+               A triumphant musical announcement, traditionally uncorked before important celebrations.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tBA.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM34.90
+            </p>
+
+            <button type="button" class="addToCart" id="mm08" data-id="mm08">
+               Add to Cart
+            </button>
+
+         </article>
+
+
+<!-- Wandering Products -->
+
+<!-- tMM -->
+
+         <article class="shopCard" data-category="wandering">
+
+            <img src="Bottle images/tMM.png"
+               alt="Magical bottle of The Merchant's Morning"
+               class="productImage">
+
+            <h3>
+               The Merchant's Morning
+            </h3>
+
+            <p>
+               The cheerful bustle of merchants preparing their stalls as the town awakens.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tMM.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM19.90
+            </p>
+
+            <button type="button" class="addToCart" id="ww01" data-id="ww01">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tTF -->
+
+         <article class="shopCard" data-category="wandering">
+
+            <img src="Bottle images/tTF.png"
+               alt="Magical bottle of The Traveler's Footsteps"
+               class="productImage">
+
+            <h3>
+               The Traveler's Footsteps
+            </h3>
+
+            <p>
+               The steady rhythm of a wanderer making their way along an unfamiliar road.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tTF.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM14.90
+            </p>
+
+            <button type="button" class="addToCart" id="ww02" data-id="ww02">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- aTT -->
+
+         <article class="shopCard" data-category="wandering">
+
+            <img src="Bottle images/aTT.png"
+               alt="Magical bottle of A Tavern's Tale"
+               class="productImage">
+
+            <h3>
+               A Tavern's Tale
+            </h3>
+
+            <p>
+               The lively sounds of an evening spent among storytellers, travelers, and questionable adventurers.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/aTT.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM29.90
+            </p>
+
+            <button type="button" class="addToCart" id="ww03" data-id="ww03">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tFS -->
+
+         <article class="shopCard" data-category="wandering">
+
+            <img src="Bottle images/tFS.png"
+               alt="Magical bottle of The Festival Square"
+               class="productImage">
+
+            <h3>
+               The Festival Square
+            </h3>
+
+            <p>
+               A town square filled with laughter, applause, and the excitement of a festival.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tFS.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM29.90
+            </p>
+
+            <button type="button" class="addToCart" id="ww04" data-id="ww04">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- MC -->
+
+         <article class="shopCard" data-category="wandering">
+
+            <img src="Bottle images/MC.png"
+               alt="Magical bottle of The Midnight Carriage"
+               class="productImage">
+
+            <h3>
+               The Midnight Carriage
+            </h3>
+
+            <p>
+               The distant approach of a carriage traveling along a deserted road.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/MC.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM34.90
+            </p>
+
+            <button type="button" class="addToCart" id="ww05" data-id="ww05">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tBR -->
+
+         <article class="shopCard" data-category="wandering">
+
+            <img src="Bottle images/tBR.png"
+               alt="Magical bottle of The Blacksmith's Rhythm"
+               class="productImage">
+
+            <h3>
+               The Blacksmith's Rhythm
+            </h3>
+
+            <p>
+               A village blacksmith working tirelessly beside a roaring forge.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tBR.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM29.90
+            </p>
+
+            <button type="button" class="addToCart" id="ww06" data-id="ww06">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tHW -->
+
+         <article class="shopCard" data-category="wandering">
+
+            <img src="Bottle images/tHW.png"
+               alt="Magical bottle of The Harbor's Welcome"
+               class="productImage">
+
+            <h3>
+               The Harbor's Welcome
+            </h3>
+
+            <p>
+               Sailors calling across the docks as vessels arrive from distant shores.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tHW.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM24.90
+            </p>
+
+            <button type="button" class="addToCart" id="ww07" data-id="ww07">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tLTH -->
+
+         <article class="shopCard" data-category="wandering">
+
+            <img src="Bottle images/tLTH.png"
+               alt="Magical bottle of The Last Train Home"
+               class="productImage">
+
+            <h3>
+               The Last Train Home
+            </h3>
+
+            <p>
+               The comforting rhythm of a late-night journey through the countryside.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tLTH.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM34.90
+            </p>
+
+            <button type="button" class="addToCart" id="ww08" data-id="ww08">
+               Add to Cart
+            </button>
+
+         </article>
+
+
+<!-- Arcane Products -->
+
+<!-- tCC -->
+
+         <article class="shopCard" data-category="arcane">
+
+            <img src="Bottle images/tCC.png"
+               alt="Magical bottle of The Crystal Choir"
+               class="productImage">
+
+            <h3>
+               The Crystal Choir
+            </h3>
+
+            <p>
+               A chorus of enchanted crystals, singing together without a single voice.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tCC.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM49.90
+            </p>
+
+            <button type="button" class="addToCart" id="aa01" data-id="aa01">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- aSS -->
+
+         <article class="shopCard" data-category="arcane">
+
+            <img src="Bottle images/aSS.png"
+               alt="Magical bottle of Stardust Serenade"
+               class="productImage">
+
+            <h3>
+               Stardust Serenade
+            </h3>
+
+            <p>
+               A delicate resonance supposedly collected from the stars themselves.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/aSS.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM49.90
+            </p>
+
+            <button type="button" class="addToCart" id="aa02" data-id="aa02">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tPM -->
+
+         <article class="shopCard" data-category="arcane">
+
+            <img src="Bottle images/tPM.png"
+               alt="Magical bottle of The Portal's Murmur"
+               class="productImage">
+
+            <h3>
+               The Portal's Murmur
+            </h3>
+
+            <p>
+               The faint vibration of a portal connecting two distant realms.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tPM.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM59.90
+            </p>
+
+            <button type="button" class="addToCart" id="aa03" data-id="aa03">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- WotW -->
+
+         <article class="shopCard" data-category="arcane">
+
+            <img src="Bottle images/WotW.png"
+               alt="Magical bottle of Whispers of the Wisps"
+               class="productImage">
+
+            <h3>
+               Whispers of the Wisps
+            </h3>
+
+            <p>
+               The playful chatter of tiny spirits drifting through an enchanted woodland.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/WotW.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM54.90
+            </p>
+
+            <button type="button" class="addToCart" id="aa04" data-id="aa04">
+               Add to Cart
+            </button>
+
+         </article>
+
+
+<!-- Forbidden Products -->
+
+<!-- FF -->
+
+         <article class="shopCard" data-category="forbidden">
+
+            <img src="Bottle images/FF.png"
+               alt="Magical bottle of Fractured Frequency"
+               class="productImage">
+
+            <h3>
+               Fractured Frequency
+            </h3>
+
+            <p>
+               A damaged resonance that constantly struggles to maintain its original form.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/FF.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM99.90
+            </p>
+
+            <button type="button" class="addToCart" id="ff01" data-id="ff01">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- HH -->
+
+         <article class="shopCard" data-category="forbidden">
+
+            <img src="Bottle images/HH.png"
+               alt="Magical bottle of The Hollow Hymn"
+               class="productImage">
+
+            <h3>
+               The Hollow Hymn
+            </h3>
+
+            <p>
+               A solemn chorus whose singers have never been found.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/HH.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM99.90
+            </p>
+
+            <button type="button" class="addToCart" id="ff02" data-id="ff02">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- aCC -->
+
+         <article class="shopCard" data-category="forbidden">
+
+            <img src="Bottle images/aCC.png"
+               alt="Magical bottle of Cursed Cadence"
+               class="productImage">
+
+            <h3>
+               Cursed Cadence
+            </h3>
+
+            <p>
+               A rhythm that continues beating long after its original source has fallen silent.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/aCC.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM99.90
+            </p>
+
+            <button type="button" class="addToCart" id="ff03" data-id="ff03">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- PF -->
+
+         <article class="shopCard" data-category="forbidden">
+
+            <img src="Bottle images/PF.png"
+               alt="Magical bottle of Phantom Footsteps"
+               class="productImage">
+
+            <h3>
+               Phantom Footsteps
+            </h3>
+
+            <p>
+               Each time the bottle is opened, another pair of footsteps seems to join the first.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/PF.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM99.90
+            </p>
+
+            <button type="button" class="addToCart" id="ff04" data-id="ff04">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tLT -->
+
+         <article class="shopCard" data-category="forbidden">
+
+            <img src="Bottle images/tLT.png"
+               alt="Magical bottle of The Last Toll"
+               class="productImage">
+
+            <h3>
+               The Last Toll
+            </h3>
+
+            <p>
+               A bell whose final resonance seems to last longer than it should.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tLT.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM99.90
+            </p>
+
+            <button type="button" class="addToCart" id="ff05" data-id="ff05">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- tUU -->
+
+         <article class="shopCard" data-category="forbidden">
+
+            <img src="Bottle images/tUU.png"
+               alt="Magical bottle of The Unfinished Utterance"
+               class="productImage">
+
+            <h3>
+               The Unfinished Utterance
+            </h3>
+
+            <p>
+               A voice attempting to finish a sentence that nobody remembers beginning.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/tUU.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM99.90
+            </p>
+
+            <button type="button" class="addToCart" id="ff06" data-id="ff06">
+               Add to Cart
+            </button>
+
+         </article>
+
+
+<!-- Peculiar Products -->
+
+<!-- HeHa -->
+
+         <article class="shopCard" data-category="peculiar">
+
+            <img src="Bottle images/HeHa.png"
+               alt="Magical bottle of Hellfire Halitosis"
+               class="productImage">
+
+            <h3>
+               Hellfire Halitosis
+            </h3>
+
+            <p>
+               An explosive cry from the depths of the underworld (FAAAHHH).
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/HeHa.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM79.90
+            </p>
+
+            <button type="button" class="addToCart" id="pp01" data-id="pp01">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- HoHi -->
+
+         <article class="shopCard" data-category="peculiar">
+
+            <img src="Bottle images/HoHi.png"
+               alt="Magical bottle of Holy High"
+               class="productImage">
+
+            <h3>
+               Holy High
+            </h3>
+
+            <p>
+               A celestial collision of God Is and Defying Gravity.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/HoHi.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM79.90
+            </p>
+
+            <button type="button" class="addToCart" id="pp02" data-id="pp02">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- ImIn -->
+
+         <article class="shopCard" data-category="peculiar">
+
+            <img src="Bottle images/ImIn.png"
+               alt="Magical bottle of Impactful Inception"
+               class="productImage">
+
+            <h3>
+               Impactful Inception
+            </h3>
+
+            <p>
+               A thunderous cinematic impact of improbable proportions.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/ImIn.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM79.90
+            </p>
+
+            <button type="button" class="addToCart" id="pp03" data-id="pp03">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- WhWi -->
+
+         <article class="shopCard" data-category="peculiar">
+
+            <img src="Bottle images/WhWi.png"
+               alt="Magical bottle of Whoopee Windbag"
+               class="productImage">
+
+            <h3>
+               Whoopee Windbag
+            </h3>
+
+            <p>
+               A mischievous burst of air from a notorious whoopee cushion.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/WhWi.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM79.90
+            </p>
+
+            <button type="button" class="addToCart" id="pp04" data-id="pp04">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- MeMi -->
+
+         <article class="shopCard" data-category="peculiar">
+
+            <img src="Bottle images/MeMi.png"
+               alt="Magical bottle of Metallurgy Mishap"
+               class="productImage">
+
+            <h3>
+               Metallurgy Mishap
+            </h3>
+
+            <p>
+               The unmistakable crash of a falling metal pipe.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/MeMi.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM79.90
+            </p>
+
+            <button type="button" class="addToCart" id="pp05" data-id="pp05">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- OrOv -->
+
+         <article class="shopCard" data-category="peculiar">
+
+            <img src="Bottle images/OrOv.png"
+               alt="Magical bottle of Orthopteran Ovation"
+               class="productImage">
+
+            <h3>
+               Orthopteran Ovation
+            </h3>
+
+            <p>
+               A chorus of crickets for an exceptionally awkward silence.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/OrOv.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM79.90
+            </p>
+
+            <button type="button" class="addToCart" id="pp06" data-id="pp06">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- PaPu -->
+
+         <article class="shopCard" data-category="peculiar">
+
+            <img src="Bottle images/PaPu.png"
+               alt="Magical bottle of Parental Pulverization"
+               class="productImage">
+
+            <h3>
+               Parental Pulverization
+            </h3>
+
+            <p>
+               A devastating declaration of emotional damage.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/PaPu.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM79.90
+            </p>
+
+            <button type="button" class="addToCart" id="pp07" data-id="pp07">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- SuSi -->
+
+         <article class="shopCard" data-category="peculiar">
+
+            <img src="Bottle images/SuSi.png"
+               alt="Magical bottle of Sus Signal"
+               class="productImage">
+
+            <h3>
+               Sus Signal
+            </h3>
+
+            <p>
+               A suspicious signal announcing a role reveal among crewmates.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/SuSi.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM79.90
+            </p>
+
+            <button type="button" class="addToCart" id="pp08" data-id="pp08">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- DaDu -->
+
+         <article class="shopCard" data-category="peculiar">
+
+            <img src="Bottle images/DaDu.png"
+               alt="Magical bottle of 刀盾 (Dāo Dùn)"
+               class="productImage">
+
+            <h3>
+               刀盾 (Dāo Dùn)
+            </h3>
+
+            <p>
+               A peculiar inquiry into what the dog is doing.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/DaDu.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM79.90
+            </p>
+
+            <button type="button" class="addToCart" id="pp09" data-id="pp09">
+               Add to Cart
+            </button>
+
+         </article>
+
+<!-- PiPa -->
+
+         <article class="shopCard" data-category="peculiar">
+
+            <img src="Bottle images/PiPa.png"
+               alt="Magical bottle of Pixel Pathology"
+               class="productImage">
+
+            <h3>
+               Pixel Pathology
+            </h3>
+
+            <p>
+               An unmistakable Windows XP error sound, bottled for digital mishaps.
+            </p>
+
+            <audio controls preload="none">
+               <source src="Bottle audios/PiPa.mp3"
+                     type="audio/mpeg">
+               Your browser does not support audio playback.
+            </audio>
+
+            <p>
+               RM79.90
+            </p>
+
+            <button type="button" class="addToCart" id="pp10" data-id="pp10">
+               Add to Cart
+            </button>
+
+         </article>
+      </div>
+   </section>
+</main>
+
+
+
+<footer>
+
+   © 2026 Ausculta Oasis
+
+   <div class="navigationLinks">
+      <p>
+         <a href="mainShop.html">
+            Store
+         </a>
+      </p>
+   </div>
+
+</footer>
+
+</body>
+</html>
