@@ -30,6 +30,7 @@ loginForm.addEventListener("submit", function(event) {
       message.style.color = "#527A57";
       message.style.fontFamily = "'Outfit', sans-serif";
 
+      window.location.href = "index.html";
    }
 
 });
