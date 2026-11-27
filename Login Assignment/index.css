@@ -1,0 +1,500 @@
+
+/*--- General Page Styling ---*/
+
+body {
+   background-color: #F5F0E8;
+   color: #302820;
+   font-family: 'Lora', Georgia, serif;
+   margin: 0;
+   background-image: url("Bottle images/pages2-bg.png");
+   background-size: cover;
+   background-position: center top;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+}
+
+:root {
+   --gold: #A17B4E;
+   --darkGold: #795C42;
+   --parchment: #FFF3E3;
+   --headingColor: #65452F;
+}
+
+
+/*--- Welcome Section ---*/
+
+#hero {
+   text-align: center;
+   padding: 70px 20px 60px;
+}
+
+#welcomeMessage {
+   font-family: 'Cinzel', Georgia, serif;
+   font-size: clamp(28px, 4vw, 46px);
+   color: #65452F;
+   letter-spacing: 2px;
+   font-weight: 600;
+   margin: 0 0 20px;
+   text-shadow: 0 2px 8px rgba(255, 243, 227, 0.9);
+}
+
+#welcomeMessage::before {
+   content: "───── ◆ ─────";
+   display: block;
+   font-size: 18px;
+   color: var(--darkGold);
+   margin-bottom: 20px;
+}
+
+.heroTagline {
+   font-size: 18px;
+   line-height: 1.6;
+   font-style: italic;
+   color: #65452F;
+   margin: 15px auto 30px;
+   max-width: 650px;
+   text-shadow: 0 1px 5px #FFF3E3;
+}
+
+#shopLink {
+   display: inline-block;
+   background-color: #8F6A42;
+   color: #FFF3E3;
+   padding: 15px 30px;
+   text-decoration: none;
+   border-radius: 10px;
+   border: 1px solid #795C42;
+   font-family: 'Cinzel', Georgia, serif;
+   font-weight: 600;
+   letter-spacing: 0.5px;
+   box-shadow: 0 4px 12px rgba(101, 69, 47, 0.2);
+   transition: 0.25s ease;
+}
+
+#shopLink:hover {
+   background-color: #795C42;
+   transform: translateY(-3px);
+   box-shadow: 0 6px 15px rgba(101, 69, 47, 0.3);
+}
+
+.heroSubtitle {
+   font-family: 'Cinzel', Georgia, serif;
+   font-size: 13px;
+   letter-spacing: 2px;
+   color: #65452F;
+   margin-top: 25px;
+}
+
+
+/*--- Featured Bottled Sounds ---*/
+
+#features {
+   text-align: center;
+   padding: 30px 20px 50px;
+}
+
+#features h2,
+#introduction h2 {
+   font-family: 'Cinzel', Georgia, serif;
+   color: var(--headingColor);
+   font-size: 28px;
+   font-weight: 600;
+   letter-spacing: 1px;
+   margin: 0 0 15px;
+}
+
+#features h2 {
+   text-shadow: 0 2px 6px #FFF3E3;
+}
+
+#features h2::after,
+#introduction h2::after {
+   content: "───── ◆ ─────";
+   display: block;
+   font-size: 13px;
+   color: var(--darkGold);
+   margin-top: 12px;
+}
+
+.sectionSubtitle {
+   font-style: italic;
+   color: #65452F;
+   font-size: 16px;
+   margin-bottom: 30px;
+   text-shadow: 0 1px 5px #FFF3E3;
+}
+
+.productGrid {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(0, 1fr));
+   max-width: 1100px;
+   gap: 20px;
+   margin: 0 auto;
+}
+
+
+/*--- Category colours for the 3 bots ---*/
+
+.productCard[data-category="verdant"] {
+   --card-accent: #6F8F72;
+   --card-light: #DCE5D3;
+   --card-dark: #405E43;
+}
+
+.productCard[data-category="hearthside"] {
+   --card-accent: #DA864E;
+   --card-light: #F3E3C7;
+   --card-dark: #8A502A;
+}
+
+.productCard[data-category="tempest"] {
+   --card-accent: #7098AC;
+   --card-light: #DFE9E8;
+   --card-dark: #395E71;
+}
+
+
+/*--- Product Cards for the 3 bots ---*/
+
+.productCard {
+   background-color: var(--card-light, #FFF3E3);
+   border: 1px solid var(--card-accent, #A17B4E);
+   border-radius: 16px;
+   padding: 22px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   min-width: 0;
+   overflow: hidden;
+   gap: 10px;
+   box-shadow: 0 5px 15px rgba(101, 69, 47, 0.12);
+   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.productCard:hover {
+   transform: translateY(-6px);
+   box-shadow: 0 10px 25px rgba(101, 69, 47, 0.2);
+}
+
+.productImage {
+   width: 100%;
+   max-width: 280px;
+   height: 270px;
+   object-fit: contain;
+   display: block;
+   margin: 0 auto;
+   transform: scale(1.45);
+   filter: drop-shadow(0 8px 10px rgba(101, 69, 47, 0.18));
+   transition: transform 0.3s ease;
+}
+
+.productCard:hover .productImage {
+   transform: scale(1.5);
+}
+
+.productCard h3 {
+   font-family: 'Cinzel', Georgia, serif;
+   font-size: 21px;
+   font-weight: 600;
+   color: #65452F;
+   margin: 10px 0 0;
+   line-height: 1.4;
+   overflow-wrap: anywhere;
+}
+
+.collectionName {
+   color: var(--card-dark);
+   font-family: 'Cinzel', Georgia, serif;
+   font-size: 13px;
+   font-weight: 600;
+   letter-spacing: 0.5px;
+   margin: 0;
+}
+
+.productDescription {
+   font-family: 'Lora', Georgia, serif;
+   font-size: 15px;
+   font-style: italic;
+   line-height: 1.7;
+   color: #65452F;
+   margin: 10px 0 18px;
+}
+
+.discoverLink {
+   display: inline-block;
+   text-decoration: none;
+   background-color: var(--card-dark);
+   color: #FFF3E3;
+   padding: 12px 18px;
+   font-family: 'Lora', Georgia, serif;
+   font-size: 14px;
+   border-radius: 8px;
+   margin-top: auto;
+   transition: 0.2s ease;
+}
+
+.discoverLink:hover {
+   filter: brightness(0.9);
+}
+
+
+/*--- Sanctuary Introduction ---*/
+
+#introduction {
+   background-color: rgba(255, 243, 227, 0.94);
+   border: 1px solid #C4A47B;
+   border-radius: 16px;
+   text-align: center;
+   max-width: 850px;
+   margin: 20px auto 60px;
+   padding: 35px;
+   box-shadow: 0 5px 18px rgba(101, 69, 47, 0.15);
+}
+
+#introduction p {
+   color: #65452F;
+   font-size: 16px;
+   line-height: 1.9;
+   margin: 15px auto;
+}
+
+#introduction .closingQuote {
+   color: var(--darkGold);
+   font-style: italic;
+   font-size: 18px;
+   margin-top: 25px;
+}
+
+
+
+footer {
+   background-color: #FFF3E3;
+   text-align: center;
+   padding: 30px 20px;
+   border-top: 3px double #A17B4E;
+   color: #795C42;
+}
+
+.footerBrand {
+   color: #956D40;
+   font-family: 'Cinzel', Georgia, serif;
+   font-size: 24px;
+   letter-spacing: 1px;
+   font-weight: 600;
+   margin: 0;
+}
+
+.footerTagline {
+   font-size: 13px;
+   font-style: italic;
+   margin: 8px 0 20px;
+}
+
+.navigationLinks {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 25px;
+   margin: 20px 0;
+}
+
+.navigationLinks a {
+   color: #795C42;
+   font-family: 'Cinzel', Georgia, serif;
+   text-decoration: none;
+   font-size: 14px;
+}
+
+.navigationLinks a:hover {
+   text-decoration: underline;
+}
+
+.copyright {
+   font-size: 12px;
+   margin: 20px 0 0;
+}
+
+#shopLink:focus-visible,
+.discoverLink:focus-visible,
+.navigationLinks a:focus-visible {
+   outline: 2px solid #65452F;
+   outline-offset: 4px;
+}
+
+
+/*--- Tablet Responsiveness Design ---*/
+
+@media (max-width: 1100px) {
+
+   #introduction {
+      margin: 20px 30px 50px;
+   }
+
+}
+
+@media (max-width: 900px) {
+
+   #hero {
+      padding: 50px 20px;
+   }
+
+   .productGrid {
+      gap: 15px;
+   }
+
+   .productCard {
+      padding: 15px;
+   }
+
+   .productImage {
+      height: 220px;
+   }
+
+   .productCard h3 {
+      font-size: 18px;
+   }
+
+   .productDescription {
+      font-size: 14px;
+   }
+
+   .collectionName {
+      font-size: 11px;
+   }
+
+}
+
+
+/*--- Mobile Responsiveness Design ---*/
+
+@media (max-width: 600px) {
+
+   #hero {
+      padding: 45px 15px 30px;
+   }
+
+   #welcomeMessage {
+      font-size: 28px;
+      letter-spacing: 0.5px;
+   }
+
+   .heroTagline {
+      font-size: 15px;
+   }
+
+   .heroSubtitle {
+      font-size: 10px;
+      letter-spacing: 1px;
+   }
+
+   #shopLink {
+      font-size: 13px;
+      padding: 14px 20px;
+   }
+
+   #features {
+      padding: 25px 12px 30px;
+   }
+
+   #features h2,
+   #introduction h2 {
+      font-size: 22px;
+   }
+
+   .sectionSubtitle {
+      font-size: 13px;
+   }
+
+   .productGrid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+   }
+
+   .productCard {
+      padding: 10px;
+      gap: 6px;
+      border-radius: 12px;
+   }
+
+   .productImage {
+      height: 150px;
+      transform: scale(1.4);
+   }
+
+   .productCard:hover .productImage {
+      transform: scale(1.4);
+   }
+
+   .productCard h3 {
+      font-size: 15px;
+      line-height: 1.4;
+   }
+
+   .collectionName {
+      font-size: 10px;
+      letter-spacing: 0;
+   }
+
+   .productDescription {
+      font-size: 12px;
+      line-height: 1.6;
+      margin: 8px 0 12px;
+   }
+
+   .discoverLink {
+      font-size: 11px;
+      padding: 12px 6px;
+      box-sizing: border-box;
+      width: 100%;
+   }
+
+   .productCard:last-child {
+      grid-column: 1 / -1;
+      width: calc((100% - 10px) / 2);
+      box-sizing: border-box;
+      justify-self: center;
+   }
+
+   #introduction {
+      padding: 20px;
+      margin: 15px 12px 35px;
+   }
+
+   #introduction p {
+      font-size: 14px;
+      line-height: 1.8;
+   }
+
+   #introduction .closingQuote {
+      font-size: 15px;
+   }
+
+   .footerBrand {
+      font-size: 20px;
+   }
+
+   .navigationLinks {
+      gap: 20px;
+   }
+
+}
+
+
+/*--- Reduced Motion (Research more) ---*/
+
+@media (prefers-reduced-motion: reduce) {
+
+   .productCard,
+   .productImage,
+   #shopLink,
+   .discoverLink {
+      transition: none;
+   }
+
+   .productCard:hover,
+   #shopLink:hover {
+      transform: none;
+   }
+
+}
